@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<faces-config version="2.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd">
+
+<!--     <managed-bean> -->
+<!--         <managed-bean-name>sessionBean</managed-bean-name> -->
+<!--         <managed-bean-class>ch.corminboeuf.SessionBean</managed-bean-class> -->
+<!--         <managed-bean-scope>session</managed-bean-scope> -->
+<!--     </managed-bean> -->
+
+	
+
+	<navigation-rule>
+		<display-name>test</display-name>
+		<from-view-id>/faces/*</from-view-id>
+		<navigation-case>		
+			<from-outcome>index</from-outcome>
+			<to-view-id>/faces/index.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>		
+			<from-outcome>profileBenevole</from-outcome>
+			<to-view-id>/faces/profileBenevole.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>		
+			<from-outcome>profileMission</from-outcome>
+			<to-view-id>/faces/profileMission.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>		
+			<from-outcome>profileEvenement</from-outcome>
+			<to-view-id>/faces/profileEvenement.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>		
+			<from-outcome>profileAssociation</from-outcome>
+			<to-view-id>/faces/profileAssociation.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>		
+			<from-outcome>profileFormation</from-outcome>
+			<to-view-id>/faces/profileAssociation.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>		
+			<from-outcome>myProfile</from-outcome>
+			<to-view-id>/faces/profileBenevole.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>		
+			<from-outcome>myMissions</from-outcome>
+			<to-view-id>/faces/myMissions.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>		
+			<from-outcome>myFormations</from-outcome>
+			<to-view-id>/faces/profileMission.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>		
+			<from-outcome>allMissions</from-outcome>
+			<to-view-id>/faces/allMissions.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>		
+			<from-outcome>allEvenements</from-outcome>
+			<to-view-id>/faces/allEvenements.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>		
+			<from-outcome>allAssociations</from-outcome>
+			<to-view-id>/faces/allAssociations.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>		
+			<from-outcome>allFormations</from-outcome>
+			<to-view-id>/faces/allEvenements.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>		
+			<from-outcome>newMission</from-outcome>
+			<to-view-id>/faces/newMission.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>		
+			<from-outcome>searchView</from-outcome>
+			<to-view-id>/faces/searchView.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+</faces-config>
