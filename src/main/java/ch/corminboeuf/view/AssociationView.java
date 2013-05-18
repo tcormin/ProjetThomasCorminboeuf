@@ -14,15 +14,15 @@ public class AssociationView implements Serializable{
 	
 	//@ManagedProperty(value = "sessionBean")
 	@EJB
-	private SessionBean sessionBean;
+	private SessionManagerImpl sessionBean;
 	
 	private Association a;
 	
-	public SessionBean getSessionBean() {
+	public SessionManagerImpl getSessionBean() {
 		return sessionBean;
 	}
 
-	public void setSessionBean(SessionBean sessionBean) {
+	public void setSessionBean(SessionManagerImpl sessionBean) {
 		this.sessionBean = sessionBean;
 	}
 

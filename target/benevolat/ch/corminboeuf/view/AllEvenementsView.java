@@ -18,7 +18,7 @@ public class AllEvenementsView implements Serializable{
 	
 	//@ManagedProperty(value = "sessionBean")
 	@EJB
-	private SessionBean sessionBean;
+	private SessionManagerImpl sessionBean;
 	
 	private List<Evenement> evenements;
 	
@@ -26,11 +26,11 @@ public class AllEvenementsView implements Serializable{
 		this.evenements = this.sessionBean.getgMissions().getDaoEvenement().getEvenements();
 	}
 
-	public SessionBean getPlateformeController() {
+	public SessionManagerImpl getPlateformeController() {
 		return sessionBean;
 	}
 
-	public void setPlateformeController(SessionBean plateformeController) {
+	public void setPlateformeController(SessionManagerImpl plateformeController) {
 		this.sessionBean = plateformeController;
 	}
 

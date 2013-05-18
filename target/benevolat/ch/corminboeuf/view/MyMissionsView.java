@@ -21,9 +21,8 @@ public class MyMissionsView implements Serializable {
 	 */
 	private static final long serialVersionUID = -998019519804607972L;
 
-	//@ManagedProperty(value = "sessionBean")
 	@EJB
-	private SessionBean sessionBean;
+	private SessionManagerImpl sessionBean;
 	
 	Utilisateur utilisateur = sessionBean.getgUtilisateurs().getDaoBenevole().getBenevoles().get(0);
 	
@@ -51,11 +50,11 @@ public class MyMissionsView implements Serializable {
 		}
 	}
 	
-	public SessionBean getSessionBean() {
+	public SessionManagerImpl getSessionBean() {
 		return sessionBean;
 	}
 
-	public void setSessionBean(SessionBean sessionBean) {
+	public void setSessionBean(SessionManagerImpl sessionBean) {
 		this.sessionBean = sessionBean;
 	}
 

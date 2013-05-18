@@ -18,7 +18,7 @@ public class AllAssociationsView implements Serializable{
 
 	//@ManagedProperty(value="sessionBean")
 	@EJB
-	private SessionBean sessionBean;
+	private SessionManagerImpl sessionBean;
 	
 	private List<Association> associations;
 	
@@ -30,7 +30,7 @@ public class AllAssociationsView implements Serializable{
 
 
 
-	public SessionBean getSessionBean() {
+	public SessionManagerImpl getSessionBean() {
 		return sessionBean;
 	}
 
@@ -38,7 +38,7 @@ public class AllAssociationsView implements Serializable{
 
 
 
-	public void setSessionBean(SessionBean sessionBean) {
+	public void setSessionBean(SessionManagerImpl sessionBean) {
 		this.sessionBean = sessionBean;
 	}
 

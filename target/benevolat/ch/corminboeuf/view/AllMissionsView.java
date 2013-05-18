@@ -18,7 +18,7 @@ public class AllMissionsView implements Serializable{
 
 	//@ManagedProperty(value = "sessionBean")
 	@EJB
-	private SessionBean sessionBean;
+	private SessionManagerImpl sessionBean;
 	
 	private List<Mission> missions;
 	private List<Mission> missionsRegulieres;
@@ -30,11 +30,11 @@ public class AllMissionsView implements Serializable{
 		this.missions = this.sessionBean.getgMissions().getDaoMission().getMissions();
 	}
 
-	public SessionBean getSessionBean() {
+	public SessionManagerImpl getSessionBean() {
 		return sessionBean;
 	}
 
-	public void setSessionBean(SessionBean sessionBean) {
+	public void setSessionBean(SessionManagerImpl sessionBean) {
 		this.sessionBean = sessionBean;
 	}
 

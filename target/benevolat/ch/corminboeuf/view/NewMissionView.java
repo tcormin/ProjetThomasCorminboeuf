@@ -17,7 +17,7 @@ public class NewMissionView implements Serializable{
 
 	//@ManagedProperty(value = "sessionBean")
 	@EJB
-	private SessionBean sessionBean;
+	private SessionManagerImpl sessionBean;
 	
 	private String progressString = "Fill the form please";
 	
@@ -26,11 +26,11 @@ public class NewMissionView implements Serializable{
 	private String description;
 	private int id = 54;
 	
-	public SessionBean getSessionBean() {
+	public SessionManagerImpl getSessionBean() {
 		return sessionBean;
 	}
 
-	public void setSessionBean(SessionBean sessionBean) {
+	public void setSessionBean(SessionManagerImpl sessionBean) {
 		this.sessionBean = sessionBean;
 	}
 	
